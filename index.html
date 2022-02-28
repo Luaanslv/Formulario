@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <style>
+        body{
+            margin: 0;
+            justify-content: center;
+            text-align: center;
+            background-image:url('img/zbynek-burival-5ib1WChF7bk-unsplash\ \(1\).jpg') ;
+            background-size: cover auto;
+            background-repeat: no-repeat;
+            width: 100%;
+        }
+        main{
+            margin: 10%auto;
+        }
+        h1{
+            color: rgb(0, 0, 0);
+        }
+        .form{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            max-width: 600px;
+            margin: auto;
+        }
+        .field{
+            margin-top: 20px;
+            padding: 5px;
+            border: 1px solid rgba(128, 128, 128, 0.589); 
+            border-radius: 10px;
+            outline: gray;
+            background-color: rgba(128, 128, 128, 0.63);
+            color: #fff;
+        }
+        ::placeholder{
+            color: #fff
+        }
+        textarea{
+            height: 150px;
+        }
+        .button{
+            width: 500px;
+            padding: 15px;
+            margin: 30px auto;
+            border-radius: 10px;
+            border: 1px solid rgba(128, 128, 128, 0.589); 
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0.404);
+            
+
+        }
+        .button:hover{
+            background-color: rgba(255, 255, 255, 0.493);
+            color: #000;
+            transition: all ease .2s;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Formulario de Contato</h1>
+        <form class="form" method="POST" action="./email.php">
+            <input class="field" name="name" placeholder="Nome">
+            <input class="field" name="email" placeholder="Email">
+            <textarea class="field" name="message" placeholder="Digite sua mensagem aqui"></textarea>
+            <input type="submit" value="Enviar" class="button">
+        </form>
+    </main>
+</body>
+</html>
